@@ -1,0 +1,12 @@
+admin:
+  version: 1.x
+  js:
+    js/admin.js: {}
+  css:
+    theme:
+      css/admin.css: {}
+  dependencies:
+    - core/jquery
+    - core/drupal
+    - core/drupal.ajax
+    - core/once

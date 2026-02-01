@@ -1,0 +1,110 @@
+{
+    "_readme": [
+        "This file locks the dependencies of your project to a known state",
+        "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
+        "This file is @generated automatically"
+    ],
+    "content-hash": "placeholder-content-hash",
+    "packages": [
+        {
+            "name": "composer/installers",
+            "version": "v2.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/composer/installers.git",
+                "reference": "c29dc4b93137acb82734f672c37e029dfbd95b35"
+            },
+            "require": {
+                "composer-plugin-api": "^1.0 || ^2.0",
+                "php": "^7.2 || ^8.0"
+            },
+            "type": "composer-plugin",
+            "license": [
+                "MIT"
+            ],
+            "description": "A multi-framework Composer library installer"
+        },
+        {
+            "name": "drupal/core-composer-scaffold",
+            "version": "10.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-composer-scaffold.git",
+                "reference": "placeholder"
+            },
+            "require": {
+                "composer-plugin-api": "^2.0",
+                "php": ">=8.1"
+            },
+            "type": "composer-plugin",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "A flexible Composer project scaffold builder."
+        },
+        {
+            "name": "drupal/core-project-message",
+            "version": "10.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-project-message.git",
+                "reference": "placeholder"
+            },
+            "require": {
+                "composer-plugin-api": "^2.0",
+                "php": ">=8.1"
+            },
+            "type": "composer-plugin",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Composer plugin to display project messages."
+        },
+        {
+            "name": "drupal/core-recommended",
+            "version": "10.2.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drupal/core-recommended.git",
+                "reference": "placeholder"
+            },
+            "require": {
+                "drupal/core": "10.2.0",
+                "php": ">=8.1"
+            },
+            "type": "metapackage",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Locked core dependencies for Drupal 10"
+        },
+        {
+            "name": "drush/drush",
+            "version": "12.4.0",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/drush-ops/drush.git",
+                "reference": "placeholder"
+            },
+            "require": {
+                "php": ">=8.1"
+            },
+            "type": "library",
+            "license": [
+                "GPL-2.0-or-later"
+            ],
+            "description": "Drush is a command line shell and scripting interface for Drupal."
+        }
+    ],
+    "packages-dev": [],
+    "aliases": [],
+    "minimum-stability": "stable",
+    "stability-flags": [],
+    "prefer-stable": true,
+    "prefer-lowest": false,
+    "platform": {
+        "php": ">=8.1"
+    },
+    "platform-dev": [],
+    "plugin-api-version": "2.6.0"
+}

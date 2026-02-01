@@ -1,0 +1,73 @@
+# Event Registration Form (Public)
+event_registration.register:
+  path: '/event/register'
+  defaults:
+    _form: '\Drupal\event_registration\Form\EventRegistrationForm'
+    _title: 'Event Registration'
+  requirements:
+    _permission: 'register for events'
+
+# Event Configuration Form (Admin)
+event_registration.event_config:
+  path: '/admin/config/event-registration/events'
+  defaults:
+    _form: '\Drupal\event_registration\Form\EventConfigForm'
+    _title: 'Event Configuration'
+  requirements:
+    _permission: 'administer event registration'
+
+# Module Settings Form (Admin)
+event_registration.settings:
+  path: '/admin/config/event-registration/settings'
+  defaults:
+    _form: '\Drupal\event_registration\Form\SettingsForm'
+    _title: 'Event Registration Settings'
+  requirements:
+    _permission: 'administer event registration'
+
+# Admin Listing Page
+event_registration.admin_list:
+  path: '/admin/event-registration/list'
+  defaults:
+    _controller: '\Drupal\event_registration\Controller\AdminController::listRegistrations'
+    _title: 'Event Registrations'
+  requirements:
+    _permission: 'view event registrations'
+
+# CSV Export
+event_registration.export_csv:
+  path: '/admin/event-registration/export-csv'
+  defaults:
+    _controller: '\Drupal\event_registration\Controller\AdminController::exportCsv'
+  requirements:
+    _permission: 'view event registrations'
+
+# AJAX Callbacks for Registration Form
+event_registration.ajax_event_dates:
+  path: '/event-registration/ajax/event-dates'
+  defaults:
+    _controller: '\Drupal\event_registration\Controller\AjaxController::getEventDates'
+  requirements:
+    _permission: 'register for events'
+
+event_registration.ajax_event_names:
+  path: '/event-registration/ajax/event-names'
+  defaults:
+    _controller: '\Drupal\event_registration\Controller\AjaxController::getEventNames'
+  requirements:
+    _permission: 'register for events'
+
+# AJAX Callbacks for Admin Listing
+event_registration.ajax_admin_events:
+  path: '/admin/event-registration/ajax/events'
+  defaults:
+    _controller: '\Drupal\event_registration\Controller\AdminController::ajaxGetEvents'
+  requirements:
+    _permission: 'view event registrations'
+
+event_registration.ajax_admin_registrations:
+  path: '/admin/event-registration/ajax/registrations'
+  defaults:
+    _controller: '\Drupal\event_registration\Controller\AdminController::ajaxGetRegistrations'
+  requirements:
+    _permission: 'view event registrations'

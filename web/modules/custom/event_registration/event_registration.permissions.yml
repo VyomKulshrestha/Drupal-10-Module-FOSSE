@@ -1,0 +1,13 @@
+administer event registration:
+  title: 'Administer Event Registration'
+  description: 'Configure event registration settings and manage events.'
+  restrict access: true
+
+view event registrations:
+  title: 'View Event Registrations'
+  description: 'View the list of event registrations and export CSV.'
+  restrict access: true
+
+register for events:
+  title: 'Register for Events'
+  description: 'Allow users to register for events.'

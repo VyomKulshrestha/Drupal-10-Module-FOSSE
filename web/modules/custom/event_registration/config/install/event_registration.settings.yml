@@ -1,0 +1,4 @@
+admin_email: ''
+enable_admin_notification: true
+enable_user_notification: true
+site_name_in_email: ''

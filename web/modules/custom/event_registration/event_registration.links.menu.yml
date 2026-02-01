@@ -1,0 +1,20 @@
+event_registration.settings:
+  title: 'Event Registration Settings'
+  description: 'Configure event registration module settings.'
+  route_name: event_registration.settings
+  parent: system.admin_config_system
+  weight: 10
+
+event_registration.event_config:
+  title: 'Event Configuration'
+  description: 'Manage event details and registration periods.'
+  route_name: event_registration.event_config
+  parent: system.admin_config_system
+  weight: 11
+
+event_registration.admin_list:
+  title: 'Event Registrations'
+  description: 'View and export event registrations.'
+  route_name: event_registration.admin_list
+  parent: system.admin_content
+  weight: 10

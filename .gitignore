@@ -1,0 +1,39 @@
+# Drupal files and directories to ignore
+
+# Ignore core and contrib modules/themes
+/web/core/
+/web/modules/contrib/
+/web/themes/contrib/
+/web/profiles/contrib/
+/web/libraries/
+
+# Ignore vendor directory
+/vendor/
+
+# Ignore Drupal files directory
+/web/sites/*/files/
+/web/sites/*/private/
+
+# Ignore settings files
+/web/sites/*/settings.php
+/web/sites/*/settings.local.php
+/web/sites/*/services.yml
+
+# Ignore default content sync
+/web/sites/*/config/
+
+# Ignore test files
+/web/sites/simpletest/
+
+# Ignore IDE files
+/.idea/
+/.vscode/
+*.sublime-project
+*.sublime-workspace
+
+# Ignore OS files
+.DS_Store
+Thumbs.db
+
+# Ignore drush local files
+/drush/sites/

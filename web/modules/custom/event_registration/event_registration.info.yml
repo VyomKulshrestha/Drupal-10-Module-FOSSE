@@ -1,0 +1,10 @@
+name: 'Event Registration'
+type: module
+description: 'Custom Drupal 10 module for event registration with AJAX forms, email notifications, and admin dashboard.'
+core_version_requirement: ^10
+package: Custom
+configure: event_registration.settings
+
+dependencies:
+  - drupal:system
+  - drupal:user
