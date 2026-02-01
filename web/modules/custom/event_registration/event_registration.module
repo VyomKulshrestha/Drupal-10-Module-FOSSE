@@ -2,7 +2,13 @@
 
 /**
  * @file
- * Contains event_registration.module.
+ * Primary module hooks for Event Registration module.
+ *
+ * This module provides event registration functionality including:
+ * - Event configuration by administrators
+ * - User registration forms with AJAX
+ * - Email notifications
+ * - Admin dashboard with CSV export
  */
 
 use Drupal\Core\Routing\RouteMatchInterface;
