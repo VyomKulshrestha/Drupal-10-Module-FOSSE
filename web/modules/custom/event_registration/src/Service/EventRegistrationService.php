@@ -8,6 +8,12 @@ use Drupal\Core\Logger\LoggerChannelFactoryInterface;
 
 /**
  * Service for managing event registrations.
+ *
+ * Provides database operations for events and registrations including:
+ * - CRUD operations for events
+ * - Registration storage and retrieval
+ * - Duplicate detection
+ * - Data export functionality
  */
 class EventRegistrationService {
 

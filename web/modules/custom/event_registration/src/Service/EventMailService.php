@@ -9,6 +9,11 @@ use Drupal\Core\Logger\LoggerChannelFactoryInterface;
 
 /**
  * Service for sending event registration emails.
+ *
+ * Handles email notifications using Drupal Mail API:
+ * - User confirmation emails
+ * - Admin notification emails
+ * - Configurable email settings
  */
 class EventMailService {
 
