@@ -13,6 +13,11 @@ use Symfony\Component\DependencyInjection\ContainerInterface;
 
 /**
  * Event Registration Form for users.
+ *
+ * Provides a public-facing registration form with:
+ * - AJAX-powered cascading dropdowns (Category -> Date -> Event)
+ * - Validation for duplicates and special characters
+ * - Email notifications on successful registration
  */
 class EventRegistrationForm extends FormBase {
 
