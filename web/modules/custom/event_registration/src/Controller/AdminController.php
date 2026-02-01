@@ -11,6 +11,11 @@ use Symfony\Component\HttpFoundation\StreamedResponse;
 
 /**
  * Controller for admin listing and export functionality.
+ *
+ * Provides administrative features:
+ * - Registration listing with AJAX filtering
+ * - CSV export functionality
+ * - Participant count display
  */
 class AdminController extends ControllerBase {
 
